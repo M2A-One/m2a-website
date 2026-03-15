@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2A | AI Automation for Construction & Business</title>
+    <meta name="description" content="M2A builds autonomous AI systems that help construction companies and businesses automate operations, generate leads, and scale without adding headcount.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --dark: #0a0a0a; --white: #f5f5f5; --gray: #888; --accent: #2e86c1; --accent-dim: #1a5276; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--dark); color: var(--white); line-height: 1.6; overflow-x: hidden; }
+        nav { position: fixed; top: 0; width: 100%; padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; z-index: 100; background: rgba(10,10,10,0.9); backdrop-filter: blur(10px); }
+        .logo { font-size: 24px; font-weight: 700; letter-spacing: 4px; }
+        nav a { color: var(--gray); text-decoration: none; font-size: 14px; letter-spacing: 1px; transition: color 0.3s; }
+        nav a:hover { color: var(--white); }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .btn-contact { border: 1px solid var(--accent); color: var(--accent); padding: 8px 24px; font-size: 14px; letter-spacing: 1px; text-decoration: none; transition: all 0.3s; }
+        .btn-contact:hover { background: var(--accent); color: var(--dark); }
+        .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 48px; max-width: 900px; }
+        .hero-tag { font-size: 12px; letter-spacing: 4px; color: var(--accent); margin-bottom: 24px; text-transform: uppercase; }
+        h1 { font-size: clamp(36px, 5vw, 64px); font-weight: 700; line-height: 1.1; margin-bottom: 24px; }
+        .hero p { font-size: 18px; color: var(--gray); max-width: 600px; margin-bottom: 48px; }
+        .hero-cta { display: inline-block; background: var(--accent); color: var(--dark); padding: 16px 48px; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-decoration: none; text-transform: uppercase; transition: all 0.3s; }
+        .hero-cta:hover { background: var(--white); }
+        section { padding: 120px 48px; }
+        .section-tag { font-size: 12px; letter-spacing: 4px; color: var(--accent); text-transform: uppercase; margin-bottom: 16px; }
+        h2 { font-size: clamp(28px, 3vw, 42px); font-weight: 700; margin-bottom: 48px; max-width: 700px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; max-width: 1200px; }
+        .service-card { border-top: 1px solid #222; padding-top: 24px; }
+        .service-card h3 { font-size: 20px; margin-bottom: 12px; }
+        .service-card p { color: var(--gray); font-size: 15px; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 48px; max-width: 900px; padding: 80px 48px; border-top: 1px solid #222; border-bottom: 1px solid #222; }
+        .stat-number { font-size: 48px; font-weight: 700; color: var(--accent); }
+        .stat-label { color: var(--gray); font-size: 14px; letter-spacing: 1px; margin-top: 8px; }
+        .approach-list { max-width: 700px; }
+        .approach-item { padding: 32px 0; border-bottom: 1px solid #222; display: flex; gap: 24px; }
+        .approach-number { font-size: 14px; color: var(--accent); font-weight: 600; min-width: 32px; }
+        .approach-item h3 { font-size: 18px; margin-bottom: 8px; }
+        .approach-item p { color: var(--gray); font-size: 15px; }
+        .cta-section { padding: 120px 48px; text-align: center; }
+        .cta-section h2 { max-width: none; margin-bottom: 24px; }
+        .cta-section p { color: var(--gray); font-size: 18px; margin-bottom: 48px; }
+        .cta-big { display: inline-block; background: var(--white); color: var(--dark); padding: 20px 64px; font-size: 16px; font-weight: 600; letter-spacing: 2px; text-decoration: none; text-transform: uppercase; transition: all 0.3s; }
+        .cta-big:hover { background: var(--accent); }
+        footer { padding: 48px; border-top: 1px solid #222; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+        footer span { color: var(--gray); font-size: 14px; }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { color: var(--gray); text-decoration: none; font-size: 14px; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--white); }
+        @media (max-width: 768px) { nav { padding: 16px 24px; } .hero { padding: 0 24px; } section { padding: 80px 24px; } .stats { padding: 60px 24px; } footer { padding: 32px 24px; } .nav-links { gap: 16px; } }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo">M2A</div>
+    <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact" class="btn-contact">Get in touch</a>
+    </div>
+</nav>
+<div class="hero">
+    <div class="hero-tag">AI Automation Agency</div>
+    <h1>We build systems that run your business while you sleep.</h1>
+    <p>M2A designs autonomous AI agents for construction companies and businesses. Less manual work. More margin. Zero new hires.</p>
+    <a href="mailto:admin@m2a.one" class="hero-cta">Start a conversation</a>
+</div>
+<div class="stats">
+    <div><div class="stat-number">$2T</div><div class="stat-label">Construction industry, largely unautomated</div></div>
+    <div><div class="stat-number">20+</div><div class="stat-label">Hours saved per week, per client</div></div>
+    <div><div class="stat-number">0</div><div class="stat-label">New employees needed</div></div>
+</div>
+<section id="services">
+    <div class="section-tag">What we build</div>
+    <h2>AI systems that solve real problems, not demos.</h2>
+    <div class="services-grid">
+        <div class="service-card"><h3>Construction Automation</h3><p>Project estimation, crew tracking, invoice management, and P&L dashboards built for how construction actually works.</p></div>
+        <div class="service-card"><h3>Lead Generation</h3><p>Automated pipelines that find, qualify, and deliver prospects to your inbox daily. Building permits, market signals, and outreach on autopilot.</p></div>
+        <div class="service-card"><h3>Business Process Automation</h3><p>Document processing, CRM workflows, data entry elimination, and reporting automation. If your team does it manually, we automate it.</p></div>
+        <div class="service-card"><h3>AI Agent Development</h3><p>Custom AI agents that handle tasks, make decisions, and coordinate workflows. Digital employees that work 24/7.</p></div>
+        <div class="service-card"><h3>Data & Intelligence</h3><p>Turn scattered spreadsheets into live dashboards. Real-time visibility into costs, performance, and opportunities.</p></div>
+        <div class="service-card"><h3>SaaS Development</h3><p>From MVP to production. Vertical software for industries still running on paper and gut feeling.</p></div>
+    </div>
+</section>
+<section id="approach">
+    <div class="section-tag">How we work</div>
+    <h2>No theory. Just working systems.</h2>
+    <div class="approach-list">
+        <div class="approach-item"><span class="approach-number">01</span><div><h3>Understand</h3><p>We map your actual workflow — where time disappears, where money leaks, where decisions get made blind.</p></div></div>
+        <div class="approach-item"><span class="approach-number">02</span><div><h3>Design</h3><p>We architect a system that fits your existing tools and team. No rip-and-replace.</p></div></div>
+        <div class="approach-item"><span class="approach-number">03</span><div><h3>Implement</h3><p>We build, test, and deploy. You get a working system with documentation, not a pitch deck.</p></div></div>
+        <div class="approach-item"><span class="approach-number">04</span><div><h3>Optimize</h3><p>Systems improve over time. We monitor, refine, and expand based on real data.</p></div></div>
+    </div>
+</section>
+<div class="cta-section" id="contact">
+    <h2>Ready to stop guessing?</h2>
+    <p>Tell us what's broken. We'll tell you how to fix it.</p>
+    <a href="mailto:admin@m2a.one" class="cta-big">admin@m2a.one</a>
+</div>
+<footer>
+    <span>M2A &copy; 2026</span>
+    <div class="footer-links">
+        <a href="https://linkedin.com/company/m2a-one" target="_blank">LinkedIn</a>
+        <a href="https://github.com/M2A-One" target="_blank">GitHub</a>
+        <a href="mailto:admin@m2a.one">Contact</a>
+    </div>
+</footer>
+</body>
+</html>
